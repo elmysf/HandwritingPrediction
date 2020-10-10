@@ -10,10 +10,11 @@
 		F0ECE53F2531D4FD00411ADE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECE53E2531D4FD00411ADE /* AppDelegate.swift */; };
 		F0ECE5412531D4FD00411ADE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECE5402531D4FD00411ADE /* SceneDelegate.swift */; };
 		F0ECE5432531D4FD00411ADE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECE5422531D4FD00411ADE /* ViewController.swift */; };
-		F0ECE5462531D4FD00411ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0ECE5442531D4FD00411ADE /* Main.storyboard */; };
 		F0ECE5492531D4FD00411ADE /* Prediction_Handwriting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0ECE5472531D4FD00411ADE /* Prediction_Handwriting.xcdatamodeld */; };
 		F0ECE54B2531D4FD00411ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0ECE54A2531D4FD00411ADE /* Assets.xcassets */; };
 		F0ECE54E2531D4FD00411ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0ECE54C2531D4FD00411ADE /* LaunchScreen.storyboard */; };
+		F0ECE5582531D52800411ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0ECE5572531D52800411ADE /* Main.storyboard */; };
+		F0ECE55B2531D54300411ADE /* Handwriting.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F0ECE55A2531D54300411ADE /* Handwriting.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +22,12 @@
 		F0ECE53E2531D4FD00411ADE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0ECE5402531D4FD00411ADE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F0ECE5422531D4FD00411ADE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F0ECE5452531D4FD00411ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0ECE5482531D4FD00411ADE /* Prediction_Handwriting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Prediction_Handwriting.xcdatamodel; sourceTree = "<group>"; };
 		F0ECE54A2531D4FD00411ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0ECE54D2531D4FD00411ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0ECE54F2531D4FD00411ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0ECE5572531D52800411ADE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F0ECE55A2531D54300411ADE /* Handwriting.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Handwriting.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,9 @@
 				F0ECE53E2531D4FD00411ADE /* AppDelegate.swift */,
 				F0ECE5402531D4FD00411ADE /* SceneDelegate.swift */,
 				F0ECE5422531D4FD00411ADE /* ViewController.swift */,
-				F0ECE5442531D4FD00411ADE /* Main.storyboard */,
 				F0ECE54A2531D4FD00411ADE /* Assets.xcassets */,
+				F0ECE55A2531D54300411ADE /* Handwriting.mlmodel */,
+				F0ECE5572531D52800411ADE /* Main.storyboard */,
 				F0ECE54C2531D4FD00411ADE /* LaunchScreen.storyboard */,
 				F0ECE54F2531D4FD00411ADE /* Info.plist */,
 				F0ECE5472531D4FD00411ADE /* Prediction_Handwriting.xcdatamodeld */,
@@ -127,9 +130,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0ECE5582531D52800411ADE /* Main.storyboard in Resources */,
 				F0ECE54E2531D4FD00411ADE /* LaunchScreen.storyboard in Resources */,
 				F0ECE54B2531D4FD00411ADE /* Assets.xcassets in Resources */,
-				F0ECE5462531D4FD00411ADE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0ECE5432531D4FD00411ADE /* ViewController.swift in Sources */,
+				F0ECE55B2531D54300411ADE /* Handwriting.mlmodel in Sources */,
 				F0ECE53F2531D4FD00411ADE /* AppDelegate.swift in Sources */,
 				F0ECE5492531D4FD00411ADE /* Prediction_Handwriting.xcdatamodeld in Sources */,
 				F0ECE5412531D4FD00411ADE /* SceneDelegate.swift in Sources */,
@@ -150,14 +154,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F0ECE5442531D4FD00411ADE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F0ECE5452531D4FD00411ADE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F0ECE54C2531D4FD00411ADE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
